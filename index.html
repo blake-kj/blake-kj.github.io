@@ -4,24 +4,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blake's Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="center">
-            <h2>Blake K-J</h2>
-            <p>A beginner getting to grips with HTML, CSS & Javascript</p>
+    <header>
+    <nav class="blue darken-4">
+        <div class="container">
+        <div class="nav-wrapper">
+            
+          <a href="#" class="brand-logo right">Blake K-J</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+        </div>
+      </nav>
 
-        <h2>Projects</h2>
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+<main>
+    <div class="container">
+        <h2>Portfolio</h2>
         <div class="row">
             <div class="col s12 m6">
                 <div class="card blue darken-4 z-depth-3">
                     <div class="card-image">
-                        <img src="img/pasta.jpg">  
+                        <img src="img/project1.png">  
                     </div>
                     <div class="card-content white-text">
                         <span class="card-title">Portfolio Website</span>
-                        <p>I created a mobile-friendly portfolio website using HTML & CSS, including the Materialize framework.</p>
+                        <p>I created a mobile-friendly portfolio website using HTML & CSS, using the Materialize framework.</p>
                     </div>
                     <div class="card-action">
                         <a href="https://blake-kj.github.io/">View Project</a>
@@ -31,7 +51,17 @@
             </div>
         </div>
     </div>
-
+</main>
+<footer class="page-footer white">
+    <div class="footer-copyright blue darken-4">
+        <div class="container">
+            <p>&copy; 2020 Copyright Blake K-J</p>
+        </div>
+    </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
+
 </html>
