@@ -25,7 +25,7 @@ main {
 }
 
 .blake img {
-  width: 350px;
+  width: 300px;
 }
 
 @media (max-width: 370px) {
