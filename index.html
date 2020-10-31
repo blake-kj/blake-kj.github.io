@@ -5,14 +5,16 @@
     <title>Blake's Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/93ab5e5259.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
     <nav class="blue darken-4">
         <div class="container">
         <div class="nav-wrapper">
-            
+
           <a href="#" class="brand-logo right">Blake K-J</a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="left hide-on-med-and-down">
@@ -34,33 +36,88 @@
 <div class="wrap">
     <canvas id="bubble"></canvas>
     <div class="container blake">
-    <img src="img/blake.png" alt="">
-    <h1>Blake K-J</h1>
-    <h5>Web Developer in HTML, CSS & JavaScript</h5>
-    <a href="pdf/Blake_CV_Public.pdf" class="">
-        <button class="btn blue darken-4 cv-btn">DOWNLOAD MY CV</button>
-    </a>
+        <div class="section">
+            <img src="img/blake.png" alt="">
+        </div>
+        <h1>Blake K-J</h1>
+        <h5>Web Developer in HTML, CSS & JavaScript</h5>
+        <div class="section">
+            <a href="pdf/Blake_CV_Public.pdf" class="">
+                <button class="btn blue darken-4">Download my CV</button>
+            </a>
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col s12">
+                    <a href="https://github.com/blake-kj">
+                        <i class="fab fa-github fa-3x blue-text text-darken-4"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/blakekeithjopp/">
+                        <i class="fab fa-linkedin fa-3x blue-text text-darken-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-    <div class="container center">
-        <h2>Portfolio</h2>
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card blue darken-4 z-depth-3">
-                    <div class="card-image">
-                        <img src="img/project1.png">  
-                    </div>
-                    <div class="card-content white-text">
-                        <span class="card-title">Portfolio Website</span>
-                        <p>I created a mobile-friendly portfolio website using HTML & CSS, using the Materialize framework.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="https://blake-kj.github.io/">View Project</a>
-                        <a href="https://github.com/blake-kj/blake-kj.github.io">Source Code</a>
+    <div class="container">
+        <h2 class="center">Portfolio</h2>
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card blue darken-4 z-depth-3">
+                        <div class="card-image">
+                            <img src="img/project1.png">  
+                        </div>
+                        <div class="card-content white-text">
+                            <span class="card-title">Portfolio Website</span>
+                            <p>I created a mobile-friendly portfolio website using HTML & CSS, using the Materialize framework.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://blake-kj.github.io/">View Project</a>
+                            <a href="https://github.com/blake-kj/blake-kj.github.io">Source Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <h2 class="center">About</h2>
+        <div class="section">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium iusto deleniti culpa dolore iste vitae ex similique. Nostrum et id ullam, ea totam iure quibusdam, consequatur debitis dolor mollitia possimus nesciunt tempore vitae, eos cumque odit. Reiciendis molestiae nobis voluptates aspernatur, veritatis magnam velit totam deleniti corrupti exercitationem provident!</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="center">Contact</h2>
+            <div class="row">
+                <div class="col m10 offset-m1 s12">
+                    <div class="row">
+                        <form class="col m8 offset-m2 s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="name" type="text">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="form-input">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="input-field col s12">
+                                  <textarea id="message" class="materialize-textarea"></textarea>
+                                  <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col m12">
+                                 <p class="center-align"><button class="btn blue darken-4" type="button" name="action">Send Message</button></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
     </div>
 
 </main>
@@ -71,7 +128,6 @@
         </div>
     </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="app.js"></script>
     <script src="bubbles.js"></script>
 </body>

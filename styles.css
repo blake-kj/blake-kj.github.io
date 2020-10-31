@@ -25,20 +25,20 @@ main {
 }
 
 .blake img {
-  width: 370px;
-}
-
-.cv-btn {
-  margin-top: 2rem;
+  width: 350px;
 }
 
 @media (max-width: 370px) {
   .blake img {
-    width: 280px;
+    width: 200px;
   }
 }
 
 canvas {
   width: 100%;
   height: 100%;
+}
+
+.input :active {
+  color: red;
 }
